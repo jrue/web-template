@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+// Change default fonts for various font styles
+$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   "Ubuntu Mono", Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+//adjust the default text color
+$text-color:    #333;
+
+//change the number of columns or gutter width
+$grid-columns:       12;
+$grid-gutter-width:  30px;
+
+
+//Breakpoints in which each measure will "snap" to a mobile view
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+//import the bootstrap library (above variables will override these)
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//import fonts
+@import "../fonts/fonts";
+
+//import custom styles
+@import "../css/style";

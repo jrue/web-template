@@ -1,0 +1,40 @@
+    
+    <!-- begin twitter summary card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= data.title %>">
+    <meta name="twitter:site" content="<%= data.twitter_handle %>">
+    <meta name="twitter:url" content="<%= data.url %>">
+    <meta name="twitter:image" content="<%= data.image %>">
+    <meta name="twitter:description" content="<%= data.description %>">
+
+    <!-- Social sharing meta -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<%= data.title %>">
+    <meta property="og:site_name" content="<%= data.site_name %>">
+    <meta property="og:url" content="<%= data.url %>">
+    <meta property="og:image" content="<%= data.image %>">
+    <meta property="og:description" content="<%= data.description %>">
+
+    <!-- Schema.org structured data -->
+    <script data-schema="NewsArticle" type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "<%= data.url %>"
+      },
+      "headline": "<%= data.seo_title %>",
+      "image": {
+        "@type": "ImageObject",
+        "url": "<%= data.image %>"
+      },
+      "dateCreated": "<%= data.date %>",
+    "datePublished": "<%= data.date + 'T' + data.time %>",
+      "author": {
+        "@type": "Person",
+        "name": "<%= data.author %>"
+      },
+      "description": "<%= data.description %>"
+    }
+    </script>
