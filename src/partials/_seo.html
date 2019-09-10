@@ -1,19 +1,19 @@
     
     <!-- begin twitter summary card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<%= data.title %>">
-    <meta name="twitter:site" content="<%= data.twitter_handle %>">
-    <meta name="twitter:url" content="<%= data.url %>">
-    <meta name="twitter:image" content="<%= data.image %>">
-    <meta name="twitter:description" content="<%= data.description %>">
+    <meta name="twitter:title" content="<%= seo.title %>">
+    <meta name="twitter:site" content="<%= seo.twitter_handle %>">
+    <meta name="twitter:url" content="<%= seo.url %>">
+    <meta name="twitter:image" content="<%= seo.image %>">
+    <meta name="twitter:description" content="<%= seo.description %>">
 
     <!-- Social sharing meta -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="<%= data.title %>">
-    <meta property="og:site_name" content="<%= data.site_name %>">
-    <meta property="og:url" content="<%= data.url %>">
-    <meta property="og:image" content="<%= data.image %>">
-    <meta property="og:description" content="<%= data.description %>">
+    <meta property="og:title" content="<%= seo.title %>">
+    <meta property="og:site_name" content="<%= seo.site_name %>">
+    <meta property="og:url" content="<%= seo.url %>">
+    <meta property="og:image" content="<%= seo.image %>">
+    <meta property="og:description" content="<%= seo.description %>">
 
     <!-- Schema.org structured data -->
     <script data-schema="NewsArticle" type="application/ld+json">
@@ -22,19 +22,19 @@
       "@type": "NewsArticle",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "<%= data.url %>"
+        "@id": "<%= seo.url %>"
       },
-      "headline": "<%= data.seo_title %>",
+      "headline": "<%= seo.seo_title %>",
       "image": {
         "@type": "ImageObject",
-        "url": "<%= data.image %>"
+        "url": "<%= seo.image %>"
       },
-      "dateCreated": "<%= data.date %>",
-    "datePublished": "<%= data.date + 'T' + data.time %>",
+      "dateCreated": "<%= seo.date %>",
+    "datePublished": "<%= seo.date + 'T' + seo.time %>",
       "author": {
         "@type": "Person",
-        "name": "<%= data.author %>"
+        "name": "<%= seo.author %>"
       },
-      "description": "<%= data.description %>"
+      "description": "<%= seo.description %>"
     }
     </script>

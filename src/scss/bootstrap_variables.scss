@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Change default fonts for various font styles
-$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  Lato, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   "Ubuntu Mono", Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
@@ -29,6 +29,8 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 );
+
+$enable-responsive-font-sizes: true;
 
 //import the bootstrap library (above variables will override these)
 @import "../../node_modules/bootstrap/scss/bootstrap";
