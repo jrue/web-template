@@ -1,20 +1,20 @@
 Web Template
 ============
 
-This is a simple web starter project that includes Bootstrap, jQuery, and D3. I will add a separate repository with individual template styles later. This template uses build and watch Grunt tasks to staging and testing a website. The build folder will be in `dist` and source files in `src`.
+This is a simple web starter project that includes Bootstrap, jQuery, and D3. I will add a separate repository with individual template styles later. This template uses build and watch Grunt tasks to stage and test a website. The build folder will be generated in `dist` and source files in `src`.
 
 ## Installation Instructions
 
 **1. Install Node**
 
-To install this template system, you first install Node/NPM on your computer. The LTS version is recommended.
+To install this template system, you first need to install Node/NPM on your computer. The LTS version is recommended.
 
 [https://nodejs.org/en/](https://nodejs.org/en/)
 
 
 **2. Clone repository**
 
-Next, clone this repository using the Terminal program on your Mac (command line). It is recommended to change your directory using the `cd` command, to a location where you want to serve and work on your project. i.e. `cd ~/Desktop` before running the command below.
+Next, clone this repository using the Terminal program on your Mac (command line). It is recommended to change your directory using the `cd` command to a location where you want to serve and work on your project. i.e. `cd ~/Desktop` before running the command below.
 
 ```
 $ git clone https://github.com/jrue/web-template.git
@@ -44,7 +44,7 @@ You should only really need to run `grunt setup` the first time you install this
 
 **How to cancel out of terminal**
 
-You can always cancel out of the watch task by pressing <kbd>Command</kbd> + <kbd>C</kbd> on your keyboard. This will allow you to quit Terminal and go on to other things.
+You can always cancel out of the watch task by pressing <kbd>Control</kbd> + <kbd>C</kbd> on your keyboard. This will allow you to quit Terminal and go on to other things.
 
 
 After initial setup, you can always relaunch the site and continue from where you left off by opening your Terminal, and `cd` into the directory of your project, and running `grunt` by itself. This will launch both the connect/watch tasks as well as create the build folder.
