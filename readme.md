@@ -1,7 +1,7 @@
 Web Template
 ============
 
-This is a simple web starter project that includes Bootstrap, jQuery, and D3. I will add a separate repository with individual template styles later. This template uses build and watch Grunt tasks to stage and test a website. The build folder will be generated in `dist` and source files in `src`.
+This is a simple web starter project that includes Bootstrap, jQuery, and D3 and various Grunt tasks I developed for a class I teach. This template uses build and watch Grunt tasks to stage and test a website. The build folder will be generated in `dist` and source files in `src`.
 
 ## Installation Instructions
 
@@ -14,7 +14,7 @@ To install this template system, you first need to install Node/NPM on your comp
 
 **2. Clone repository**
 
-Next, clone this repository using the Terminal program on your Mac (command line). It is recommended to change your directory using the `cd` command to a location where you want to serve and work on your project. i.e. `cd ~/Desktop` before running the command below.
+Next, clone (or fork) this repository using the Terminal program on your Mac (command line). It is recommended to change your directory using the `cd` command to a location where you want to serve and work on your project. i.e. `cd ~/Desktop` before running the command below.
 
 ```
 $ git clone https://github.com/jrue/web-template.git
@@ -31,6 +31,22 @@ $ npm install
 ```
 
 Now, you're ready to work on the project. Open the folder in Sublime. 
+
+## Installing Grunt (Optional)
+
+It's easiest to install Grunt globally, so that you can use simple grunt tasks. I've added a couple of scripts in case you wish not to install globally.
+
+```
+$ npm install -g grunt-cli
+```
+
+**If you don't want to install Grunt globally**, to run the two grunt commands I've setup use `npm run`.
+
+```
+$ npm run grunt
+
+$ npm run setup
+```
 
 ## Setting up the web template for the first time
 
@@ -104,5 +120,17 @@ To embed the partial in your .html, use the following template tag:
 ```
 
 Inside the include function is a path to the partial you want to embed.
+
+## Deploying to Github Pages
+
+To deploy this website to Github pages, in yoru terminal run:
+
+```
+$ npm run deploy
+```
+
+This will create a `gh-pages` branch in your reposity and automaticall push the `dist` folder contents. 
+
+
 
 

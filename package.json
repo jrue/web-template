@@ -7,7 +7,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "grunt": "grunt"
+    "setup": "grunt setup",
+    "grunt": "grunt",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Jeremy Rue",
   "license": "MIT",

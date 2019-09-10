@@ -125,7 +125,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('publish', 'Publish project to gh-pages', ()=>{
 
-    ghpages.publish('dist');
+    ghpages.publish('dist',  {push: false}, function(err){
+      grunt.log.writeln(err);
+    });
 
   });
 
