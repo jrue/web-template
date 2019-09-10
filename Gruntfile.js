@@ -1,5 +1,6 @@
 const path = require('path');
 const _ = require('lodash');
+const ghpages = require('gh-pages');
 
 
 module.exports = function(grunt) {
@@ -119,6 +120,12 @@ module.exports = function(grunt) {
       }
     }
 
+
+  });
+
+  grunt.registerTask('publish', 'Publish project to gh-pages', ()=>{
+
+    ghpages.publish('dist');
 
   });
 
